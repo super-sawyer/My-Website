@@ -315,10 +315,10 @@
 
 <!-- Extra Fun Feature Section -->
 <section id="fun-zone" class="fun-zone">
-    <h2>Sawyer's Choice Generator</h2>
-    <p>Can't decide what to listen to or make for dinner? Let my hobby generator pick your next vibe!</p>
-    <button class="fun-btn" onclick="generateIdea()">Surprise Me! <i class="fa-solid fa-wand-magic-sparkles"></i></button>
-    <div id="result-display">Click the button to get an idea!</div>
+    <h2>Random Song picker</h2>
+    <p>I will Give you an awsome song to listen to</p>
+    <button class="fun-btn" onclick="generateIdea()">push me <i class="fa-solid fa-wand-magic-sparkles"></i></button>
+    <div id="result-display">Click the button to get an song</div>
 </section>
 
 <section id="contact">
@@ -336,14 +336,15 @@
 <!-- JavaScript for the Interactive Fun Feature -->
 <script>
     function generateIdea() {
-        const ideas = [
-            "🍳 Recipe Idea: Master the perfect Crispy Smash Burgers tonight!",
-            "🎸 Guitar Vibe: Learn the iconic intro riff to 'Sultans of Swing' by Dire Straits.",
-            "🍳 Recipe Idea: Level up your dinner with a customized, homemade personal Pizza from scratch.",
-            "🎸 Guitar Vibe: Grab your guitar and practice an acoustic arrangement of your favorite video game soundtrack.",
-            "🍳 Recipe Idea: Whip up some quick, fresh street tacos with lime-cilantro sauce.",
-            "🎸 Guitar Vibe: Spend 15 minutes practicing a challenging new fingerpicking pattern!"
-        ];
+    const ideas = [
+        "Can't Let Her Get Away - Michael Jackson",
+        "Interstate Love Song - Stone Temple Pilots",
+        "15 Step - Radiohead",
+        "Danza Brasileira - Jorge Morel",
+        "Black Hole Sun - Soundgarden",
+        "Lithium - Nirvana"
+    ];
+}
         
         const randomIndex = Math.floor(Math.random() * ideas.length);
         const display = document.getElementById('result-display');
