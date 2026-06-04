@@ -336,15 +336,14 @@
 <!-- JavaScript for the Interactive Fun Feature -->
 <script>
     function generateIdea() {
-    const ideas = [
-        "Can't Let Her Get Away - Michael Jackson",
-        "Interstate Love Song - Stone Temple Pilots",
-        "15 Step - Radiohead",
-        "Danza Brasileira - Jorge Morel",
-        "Black Hole Sun - Soundgarden",
-        "Lithium - Nirvana"
-    ];
-}
+        const ideas = [
+            "Can't Let Her Get Away - Michael Jackson",
+            "Interstate Love Song - Stone Temple Pilots",
+            "15 Step - Radiohead",
+            "Danza Brasileira - Jorge Morel",
+            "Black Hole Sun - Soundgarden",
+            "Lithium - Nirvana"
+        ];
         
         const randomIndex = Math.floor(Math.random() * ideas.length);
         const display = document.getElementById('result-display');
@@ -356,7 +355,7 @@
             display.style.opacity = 1;
             display.style.transition = "opacity 0.4s ease";
         }, 150);
-    }
+    } // <-- The function now properly closes here
 </script>
 
 </body>
